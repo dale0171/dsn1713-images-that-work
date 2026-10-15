@@ -34,7 +34,7 @@
              3. Rewrite the alt so it describes the logo meaningfully
         -->
         <a href="#" class="navbar-brand logo-link">
-          <img src="images/ridgeline-logo.svg" alt="logo" class="logo">
+          <img src="images/ridgeline-logo.svg" alt="Ridgeline Logo" class="logo">
         </a>
         <!-- ========== END TASK 1 ========== -->
 
@@ -73,7 +73,12 @@
                    - src="images/hero.png" as the fallback
          Then finish Task 3 in css/style.css.
     -->
-
+      <img class="hero__img" alt="Two people hiking on a mountain."
+      srcset="images/hero-400.webp 400px,
+        images/hero-800.webp 800px,
+        images/hero-1200.webp 1200px,
+        images/hero-1920.webp 1920px"
+      src="images/hero.png" sizes="100vm">
     <!-- ========== END TASKS 2 + 3 ========== -->
 
     <div class="hero__content container py-5">
@@ -102,7 +107,7 @@
           <article class="gear-card card h-100 bg-white border-0 rounded-0">
             <!-- ========== TASK 4: change src to your optimized .webp file ========== -->
             <div class="gear-card__image ratio ratio-4x3 overflow-hidden">
-              <img src="images/product-jacket.png" alt="Ridgeline Apex Shell Jacket in olive green">
+              <img src="images/product-jacket.webp" alt="Ridgeline Apex Shell Jacket in olive green">
             </div>
             <!-- ========== END TASK 4 ========== -->
             <div class="card-body p-4">
@@ -121,7 +126,7 @@
           <article class="gear-card card h-100 bg-white border-0 rounded-0">
             <!-- ========== TASK 4: change src to your optimized .webp file ========== -->
             <div class="gear-card__image ratio ratio-4x3 overflow-hidden">
-              <img src="images/product-boots.png" alt="Ridgeline Summit Mid hiking boots in brown leather">
+              <img src="images/product-boots.webp" alt="Ridgeline Summit Mid hiking boots in brown leather">
             </div>
             <!-- ========== END TASK 4 ========== -->
             <div class="card-body p-4">
@@ -158,7 +163,7 @@
           <article class="note-card h-100">
             <!-- ========== TASK 5: change src to your optimized .webp file ========== -->
             <div class="note-card__image ratio ratio-3x2 overflow-hidden mb-4">
-              <img src="images/note-rideau.png" alt="A hiker crossing a wooden bridge on the Rideau Trail">
+              <img src="images/note-rideau.webp" alt="A hiker crossing a wooden bridge on the Rideau Trail">
             </div>
             <!-- ========== END TASK 5 ========== -->
             <div class="border-top pt-4">
@@ -177,7 +182,7 @@
           <article class="note-card h-100">
             <!-- ========== TASK 5: change src to your optimized .webp file ========== -->
             <div class="note-card__image ratio ratio-3x2 overflow-hidden mb-4">
-              <img src="images/note-gatineau.png" alt="Snow-covered trees on a Gatineau Hills winter trail">
+              <img src="images/note-gatineau.webp" alt="Snow-covered trees on a Gatineau Hills winter trail">
             </div>
             <!-- ========== END TASK 5 ========== -->
             <div class="border-top pt-4">
@@ -196,7 +201,7 @@
           <article class="note-card h-100">
             <!-- ========== TASK 5: change src to your optimized .webp file ========== -->
             <div class="note-card__image ratio ratio-3x2 overflow-hidden mb-4">
-              <img src="images/note-supply.png" alt="A textile factory floor with workers at sewing machines">
+              <img src="images/note-supply.webp" alt="A textile factory floor with workers at sewing machines">
             </div>
             <!-- ========== END TASK 5 ========== -->
             <div class="border-top pt-4">
@@ -233,7 +238,13 @@
                      a meaningful alt, and class="landscape-banner__img"
          Then finish Task 7 in css/style.css.
     -->
-
+    <section>
+      <picture>
+        <source media="(max-width:768px)" srcset="images/banner-portrait.webp">
+        <source media="(min-width:769px)" srcset="images/banner-wide.webp">
+        <img class="landscape-banner__img" src="images/landscape-banner.png" alt="A low to the ground shot of a gravel hiking trail.">
+      </picture>
+    </section>
     <!-- ========== END TASKS 6 + 7 ========== -->
 
     <div class="landscape-banner__content text-center px-4 py-5">
